@@ -2,10 +2,13 @@ Basically, an exercise in Processing with one of my favorite algorithms.
 
 See for an introduction: https://en.wikipedia.org/wiki/Monte_Carlo_localization
 
+### Note on Model Correctness
+Please note that model is not yet completely correct, in fact much of the sensible computations are commented out for debugging, but it does already show some interesting visuals. Screenshots to follow.
+
 ### Installation
 The code requires 
 - Processing 2+ https://processing.org/ with the 
-- Python mode installed https://github.com/jdf/processing.py 
+- Python mode installed https://github.com/jdf/processing.py to run.
 
 (I believe, the extension of the main file mcloc.py will need to be changed to .pyde for it to open in the Processing IDE)
 
@@ -26,7 +29,7 @@ I also tried linking the executable inside the processing-py app but it just got
 Just run the mcloc file in Processing or as I described -- it will initialize and start the update loop. 
 
 ### Representation
-It's a 2D grid world, which is a sort of fusion between the actual world geometry and agent's belief about their location. Each cell is shaded proportionally to the probability of the agent being there such that lighter colors indicate higher likelihood. Obstacles are shaded as completely black (zero likelihood).
+It's a 2D grid world, which is a sort of fusion between the actual world geometry and agent's belief about their location. Each cell is shaded proportionally to the probability of the agent being there such that lighter colors indicate higher likelihood. Obstacles are shaded as completely black (zero likelihood). 
 
 ### Keyboard Controls
 The idea was to give a lot of flexibility to experimentat with model parameters (e.g. sensor noise) and some visual aspects too.
