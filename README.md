@@ -3,7 +3,10 @@ Basically, an exercise in Processing with one of my favorite algorithms.
 See for an introduction: https://en.wikipedia.org/wiki/Monte_Carlo_localization
 
 ### Installation
-The code requires Processing 2+ https://processing.org/ with the Python mode installed https://github.com/jdf/processing.py (I believe, the extension of the main file mcloc.py will need to be changed to .pyde for it to open in the Processing IDE)
+The code requires 
+- Processing 2+ https://processing.org/ with the 
+- Python mode installed https://github.com/jdf/processing.py 
+(I believe, the extension of the main file mcloc.py will need to be changed to .pyde for it to open in the Processing IDE)
 
 OR
 
