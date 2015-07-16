@@ -8,15 +8,15 @@ Please note that model is not yet completely correct, in fact much of the sensib
 ### Installation
 The code requires 
 - Processing 2+ https://processing.org/ with the 
-- PyProcessing's Python mode installed https://github.com/jdf/processing.py to run.
+- Processing.py's Python mode installed https://github.com/jdf/processing.py to run.
 
-(I believe, the extension of the main file mcloc.py will need to be changed to .pyde for it to open in the Processing IDE)
+(I believe, the extension of the main file 'mcloc.py' will need to be changed to '.pyde' for it to open in the Processing IDE)
 
 OR
 
-Just use PyProcessing's .sh (or .bat) as a "custom Python interpreter" for any other IDE. 
+Just use Processing.py's .sh (or .bat) as a "custom Python interpreter" for any other IDE. 
 
-PyCharm required some tinkering though. It wouldn't allow to just add it saying it didn't look like a legit Python SDK. So I had to put PyProcessing alongside the normal Python interpreter:
+PyCharm required some tinkering though. It wouldn't allow to just add it saying it didn't look like a legit Python SDK. So I had to put Processing.py's directory alongside the normal Python interpreter:
 
 in /Library/Frameworks/Python.framework/Versions/<here> on Mac 
 
@@ -26,7 +26,7 @@ It first showed some warning about an unknown/invalid interpreter but they went 
 I also tried linking the executable inside the processing-py app but it just got ugly -- with uncontrolled spawning of JVMs even without me having to hit 'run' in PyCharm so the above seems more decent.
 
 ### Running
-Just run the mcloc file in Processing or as I described -- it will initialize and start the update loop. 
+Just run the 'mcloc' file in Processing or as I described -- it will initialize and start the update loop. 
 
 ### Representation
 It's a 2D grid world, which is a sort of fusion between the actual world geometry and agent's belief about their location. Each cell is shaded proportionally to the probability of the agent being there such that lighter colors indicate higher likelihood. Obstacles are shaded as completely black (zero likelihood). 
