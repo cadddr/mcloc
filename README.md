@@ -13,7 +13,7 @@ OR
 
 Just use PyProcessing's .sh (or .bat) as a "custom Python interpreter" for any other IDE. PyCharm required some tinkering though. It wouldn't allow to just add it saying it didn't look like a legit Python SDK.
 
-So I had to put PyProcessing alongside the normal Python interpreter in /Library/Frameworks/Python.framework/Versions/
+So I had to put PyProcessing alongside the normal Python interpreter: /Library/Frameworks/Python.framework/Versions/
 on Mac AND create a symbolik link for the .sh with the name 'python' and then point PyCharm to that symlink. It first showed some warning about an unknown/invalid interpreter but they went away and it "compiled". (Although with a Processing.py splashscreen, which I personally find less annoying than having to use Processing's native IDE.) 
 
 I also tried linking the executable inside the processing-py app but it just got ugly -- with uncontrolled spawning of JVMs even without me having to hit 'run' in PyCharm so the above seems more decent.
