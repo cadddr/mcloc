@@ -34,9 +34,6 @@ def draw_cell(grid, x, y):
     else:
         noStroke()
 
-    #if not grid[y][x] and not edge(x, y) and highlight:
-     #   fill(15, 0, 0)
-    #else:
     fill(fade(grid[y][x]) + 7 * (grid[y][x] and highlight))
 
     rect(pixels(x), pixels(y), cell, cell)
@@ -45,19 +42,9 @@ def fade(rate):
     return 3 * 255 * rate
 
 def draw(grid):
+    # normalize
     mass = reduce_by(grid, sum)
-
     for y in range(len(grid)):
         for x in range(len(grid[0])):
-            # normalize
             grid[y][x] /= mass
-            # relative scale evil
-            #grid[y][x] /= reduce_by(grid, max)
-
-
-    #absolute = reduce_by(grid, max)
-    #for y in range(len(grid)):
-    #    for x in range(len(grid[0])):
-    #        grid[y][x] /= absolute
-
             draw_cell(grid, x, y)
