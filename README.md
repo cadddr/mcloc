@@ -2,7 +2,7 @@ Basically, an exercise in Processing with one of my favorite algorithms.
 
 See for an introduction: https://en.wikipedia.org/wiki/Monte_Carlo_localization
 
-### Note on Model Correctness
+### On Model Correctness
 Please note that model is not yet completely correct, in fact much of the sensible computations are commented out for debugging, but it does already show some interesting visuals. Screenshots to follow.
 
 ### Installation
