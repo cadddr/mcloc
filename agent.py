@@ -4,12 +4,12 @@ from random import random
 
 sense_range = 1
 sense_prob = .7
-move_prob = .99
+move_prob = 1.
 
 
 class agent(object):
     pos = PVector(2, 2)
-    prev = PVector(0, 0)
+    #prev = PVector(0, 0)
     speed = PVector(1, 0)
 
     auto = False
@@ -29,14 +29,9 @@ class agent(object):
 
         for y in range(sense_range, len(grid) - sense_range):
             for x in range(sense_range, len(grid[0]) - sense_range):
-
-                #grid[y][x] = random()
-                #continue
                 if grid[y][x]:
-                    if around == look_around(grid, PVector(x, y), sense_range):
-                        grid[y][x] *= .7#sense_prob
-                    else:
-                        grid[y][x] *= .3#(1. - sense_prob)
+                    hit = around == look_around(grid, PVector(x, y), sense_range)
+                    grid[y][x] *= hit * sense_prob + (1 - hit) * (1 - sense_prob)
 
     def move(self, grid):
         if not self.auto:
@@ -52,16 +47,19 @@ class agent(object):
                 break
             turn()
 
-        self.prev = self.pos
-        self.pos = new
-
-        # TODO: IMPLEMENT UNCERTAIN MOTION
+        #temp = [[0. for x in grid[0]] for y in grid]
 
         # belief update
         for y in range(1, len(grid) - 1):
             for x in range(1, len(grid[0]) - 1):
                 if grid[y][x]:
-                    grid[y][x] += grid[int(self.prev.y)][int(self.prev.x)] * move_prob #/ (sqrt((y - self.pos.y) ** 2 + (x - self.pos.x) ** 2) + .001)
+                    grid[y][x] = grid[int(new.y)][int(new.x)] * move_prob #+ grid[int(new.y)][int(new.x)] * (1 - move_prob) #/ (sqrt((y - self.pos.y) ** 2 + (x - self.pos.x) ** 2) + .001)
+
+        #grid = temp
+        #self.prev = self.pos
+        self.pos = new
+
+
 
         #grid[int(self.pos.y)][int(self.pos.x)] = grid[int(self.prev.y)][int(self.prev.x)] * move_prob
 
