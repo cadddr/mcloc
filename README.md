@@ -15,6 +15,7 @@ The code requires
 OR
 
 Just use PyProcessing's .sh (or .bat) as a "custom Python interpreter" for any other IDE. 
+
 PyCharm required some tinkering though. It wouldn't allow to just add it saying it didn't look like a legit Python SDK. So I had to put PyProcessing alongside the normal Python interpreter:
 
 in /Library/Frameworks/Python.framework/Versions/<here> on Mac 
