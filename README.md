@@ -1,4 +1,4 @@
-Basically, an exercise of visualizing one of my favorite algorithmsin in Processing. 
+Basically, an exercise of visualizing one of my favorite algorithms in Processing. 
 
 See for an introduction: https://en.wikipedia.org/wiki/Monte_Carlo_localization
 
