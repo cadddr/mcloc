@@ -39,3 +39,5 @@ So far supported:
 - M toggles the highlight of the agent's actual position.
 - H slightly highlights the obstacles.
 - G toggles the grid outline (purely visual purpose).
+
+More to come (i.e. the promised sensor noise).
