@@ -8,15 +8,14 @@ Please note that model is not yet completely correct, in fact much of the sensib
 ### Installation
 The code requires 
 - Processing 2+ https://processing.org/ with the 
-- Python mode installed https://github.com/jdf/processing.py to run.
+- PyProcessing's Python mode installed https://github.com/jdf/processing.py to run.
 
 (I believe, the extension of the main file mcloc.py will need to be changed to .pyde for it to open in the Processing IDE)
 
 OR
 
-Just use PyProcessing's .sh (or .bat) as a "custom Python interpreter" for any other IDE. PyCharm required some tinkering though. It wouldn't allow to just add it saying it didn't look like a legit Python SDK.
-
-So I had to put PyProcessing alongside the normal Python interpreter:
+Just use PyProcessing's .sh (or .bat) as a "custom Python interpreter" for any other IDE. 
+PyCharm required some tinkering though. It wouldn't allow to just add it saying it didn't look like a legit Python SDK. So I had to put PyProcessing alongside the normal Python interpreter:
 
 in /Library/Frameworks/Python.framework/Versions/<here> on Mac 
 
