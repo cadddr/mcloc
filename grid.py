@@ -2,9 +2,9 @@ __author__ = 'pb'
 
 from random import random
 
-cell = 64
-sparsity = .8
-highlight = False
+cell = 8
+sparsity = .9
+highlight = True
 show = False
 shape = rect
 

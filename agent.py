@@ -11,7 +11,7 @@ class agent(object):
     speed = PVector(1, 0)
 
     auto = False
-    visible = True
+    visible = False
 
     def sense(self, grid):
         def look_around(grid, pos, range):

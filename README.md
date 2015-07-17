@@ -3,7 +3,7 @@ Basically, an exercise of visualizing one of my favorite algorithms in Processin
 See for an introduction: https://en.wikipedia.org/wiki/Monte_Carlo_localization
 
 ### On Model Correctness
-Please note that model is not yet completely correct, in fact, much of the sensible computations are commented out for debugging, but it does already show some interesting visuals. Screenshots to follow.
+Please note that model is not yet completely correct but it does already show some interesting visuals. Screenshots to follow.
 
 ### Installation
 The code requires 
@@ -16,7 +16,7 @@ OR
 
 Just use Processing.py's .sh (or .bat) as a "custom Python interpreter" for any other IDE. 
 
-PyCharm required some tinkering though. It wouldn't allow to just add it saying it didn't look like a legit Python SDK. So I had to put Processing.py's directory alongside the normal Python interpreter:
+PyCharm required some tinkering, though. It wouldn't allow to just add it saying it didn't look like a legit Python SDK. So I had to put Processing.py's directory alongside the normal Python interpreter:
 
 in /Library/Frameworks/Python.framework/Versions/<here> on Mac 
 
