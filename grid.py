@@ -6,6 +6,8 @@ cell = 64
 sparsity = .8
 highlight = False
 show = False
+shape = rect
+
 
 def pixels(cells):
     return cells * cell

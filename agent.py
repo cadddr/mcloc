@@ -45,7 +45,7 @@ class agent(object):
         for y in range(1, len(grid) - 1):
             for x in range(1, len(grid[0]) - 1):
                 if grid[y][x]:
-                    grid[y][x] = grid[int(self.pos.y)][int(self.pos.x)] * move_prob + grid[int(new.y)][int(new.x)] * (1 - move_prob)
+                    grid[y][x] = grid[int(y - self.speed.y)][int(x - self.speed.x)] * move_prob + grid[y][x] * (1 - move_prob)
 
         self.pos = new
 

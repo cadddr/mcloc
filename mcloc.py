@@ -42,3 +42,6 @@ def keyPressed():
 
     if key == 'g':
         grid.show = not grid.show
+
+    if key == 'o':
+        grid.shape = []
