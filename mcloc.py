@@ -2,7 +2,7 @@ __author__ = 'pb'
 import grid
 from agent import agent
 
-fps = 5
+fps = 15
 
 global g
 global a

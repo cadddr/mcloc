@@ -3,8 +3,8 @@ from grid import cell, pixels, vicinity, reduce_by
 from random import random
 
 sense_range = 1
-sense_prob = .9
-move_prob = .9
+sense_prob = .7
+move_prob = .7
 
 class agent(object):
     pos = PVector(2, 2)
