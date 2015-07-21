@@ -2,7 +2,7 @@ Basically, an exercise of visualizing one of my favorite algorithms in Processin
 
 See for an introduction: https://en.wikipedia.org/wiki/Monte_Carlo_localization
 
-![alt tag](https://raw.github.com/cadddr/mcloc/master/gif/2.gif=250)
+![alt tag](https://raw.github.com/cadddr/mcloc/master/gif/2.gif =250)
 
 ### On Model Correctness
 Please note that model is not yet completely correct but it does already show some interesting visuals.
