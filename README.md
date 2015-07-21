@@ -6,7 +6,7 @@ See for an introduction: https://en.wikipedia.org/wiki/Monte_Carlo_localization
 
 <img align="center" src="https://raw.github.com/cadddr/mcloc/master/gif/2.gif" width="400" /> 
 
-(obstacles/landmarks are too dark/small to see but I think the above animation gives a gist of the process)
+(obstacles/landmarks are too dark/small to see in the above animation but it gives a good gist of the process)
 
 ### On Model Correctness
 Please note that model is not yet completely correct but it does already show some interesting visuals.
