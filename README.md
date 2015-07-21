@@ -1,3 +1,5 @@
+### MC loc for Monte Carlo localization
+
 Basically, an exercise of visualizing one of my favorite algorithms in Processing. 
 
 See for an introduction: https://en.wikipedia.org/wiki/Monte_Carlo_localization
