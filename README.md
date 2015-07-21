@@ -4,9 +4,9 @@ Basically, an exercise of visualizing one of my favorite algorithms in Processin
 
 See for an introduction: https://en.wikipedia.org/wiki/Monte_Carlo_localization
 
-<img src="https://raw.github.com/cadddr/mcloc/master/gif/1.gif" width="200" /> 
-<img src="https://raw.github.com/cadddr/mcloc/master/gif/2.gif" width="200" /> 
-<img src="https://raw.github.com/cadddr/mcloc/master/gif/3.gif" width="200" />
+<img src="https://raw.github.com/cadddr/mcloc/master/gif/1.gif" width="250" /> 
+<img src="https://raw.github.com/cadddr/mcloc/master/gif/2.gif" width="250" /> 
+<img src="https://raw.github.com/cadddr/mcloc/master/gif/3.gif" width="250" />
 
 (obstacles/landmarks are too dark/small to see in the above animations but they give a gist of the process)
 
