@@ -1,4 +1,4 @@
-### MC loc for Monte Carlo localization
+### mcloc for Monte Carlo localization
 
 Basically, an exercise of visualizing one of my favorite algorithms in Processing. 
 
